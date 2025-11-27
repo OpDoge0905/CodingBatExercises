@@ -9,5 +9,17 @@
 // startOz("oxx") → "o"
 
 public String startOz(String str) {
-    
+    String strOut = "";
+    if (str.length()<1){
+        return strOut;
+    }
+    else{
+        if (str.startsWith("o")){
+            strOut = strOut + str.charAt(0);
+        }
+        if (str.startsWith("z", 1)){
+            strOut = strOut + str.charAt(1);
+        }
+    }
+    return strOut;
 }
