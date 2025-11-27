@@ -1,2 +1,16 @@
-# CodingBatExercises
-Java 自學與演算法練習｜CodingBat Practice Collection 紀錄我自學 Java 的過程，並透過 CodingBat 的題目鍛鍊邏輯能力、基礎語法與問題解決技巧。本專案持續更新，作為我的程式學習歷程與成長紀錄之一。 建立日期：2025/11/27
+# Java Self-Learning & CodingBat Practice
+
+這個專案紀錄我自學 Java 的過程，並以 CodingBat 的題目作為每日練習。  
+透過實作簡潔的程式邏輯、條件判斷、字串處理與基本演算法，我逐步提升自己在 Java 開發上的熟練度。
+
+---
+
+## 🔥 專案目的
+- 建立扎實的 Java 程式基礎  
+- 鍛鍊程式邏輯與解題能力  
+- 保留學習歷程作為未來求職作品集的一部分  
+
+---
+
+## 📅 建立日期
+2025/11/27
