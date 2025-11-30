@@ -3,15 +3,12 @@
 
 ---
 
-## 🎖️ Badges
-
 ![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 ![CodingBat](https://img.shields.io/badge/CodingBat-Practice-blue?style=for-the-badge)
 ![Progress](https://img.shields.io/badge/Progress-Learning-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![Last Commit](https://img.shields.io/github/last-commit/OpDoge0905/CodingBatExercises?style=for-the-badge)
 ![Repo Size](https://img.shields.io/github/repo-size/OpDoge0905/CodingBatExercises?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
 ---
 
