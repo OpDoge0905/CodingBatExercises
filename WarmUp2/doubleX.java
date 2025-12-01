@@ -1,8 +1,26 @@
-/**
- * Problem: doubleX
- *
- * CodingBat Java Warmup-2 doubleX\n * id/email\n * password\n * forgot password\n *  | \n * create account\n * about\n *  | \n * help\n *  | \n * code help+videos | \n * done\n *  | \n * prefs\n * CodingBat\n *  code practice\n * Java\n * Python\n * Warmup-2\n *  > \n * doubleX\n * prev\n *   |  \n * next\n *   |  \n * chance\n * Given a string, return true if the first instance of "x" in the string is immediately followed by another "x".\n * doubleX("axxbb") → true\n * doubleX("axaxax") → false\n * doubleX("xxxxx") → true\n * Go\n * ...Save, Compile, Run (ctrl-enter)\n * Show Hint\n * Show Solution\n * boolean doubleX(String str) {\n * }\n * Go\n * Editor font size %:\n * 75\n * 100\n * 125\n * 150\n * Shorter output \n * Forget It!\n *  -- delete my code for this problem\n * Progress graphs: \n * Your progress graph\n *  for this problem\n * Random user progress graph\n *  for this problem \n * Random Epic Progress Graph\n * Java Help\n * Java Example Solution Code\n * Java String Introduction\n *  (video) \n * Java Substring v2\n *  (video)\n * Java String Equals and Loops\n * Java String indexOf and Parsing\n * Java If and Boolean Logic\n * If Boolean Logic Example Solution Code 1\n *  (video)\n * If Boolean Logic Example Solution Code 2\n *  (video)\n * Java For and While Loops\n * Java Arrays and Loops\n * Java Map Introduction\n * Java Map WordCount\n * Java Functional Mapping\n * Java Functional Filtering\n * Misc Code Practice\n * Code Badges\n * Introduction to Mod\n *  (video)\n * MakeBricks problem and solution\n *  (video x 2)\n * FizzBuzz the famous\n *  code interview question (video)\n * Difficulty: 208.0\n * Post-solution available\n * Copyright \n * Nick Parlante\n *  2017 - \n * privacy
- */
-public class doubleX {
-    // TODO: 實作此題
+// https://codingbat.com/prob/p186759
+
+// Given a string, return true if the first instance of "x" in the string is immediately followed by another "x".
+
+// doubleX("axxbb") → true
+// doubleX("axaxax") → false
+// doubleX("xxxxx") → true
+
+boolean doubleX(String str) {
+    boolean finalX = false;
+    boolean firstX = false;
+    if(str.length()<2){
+        return false;
+    }
+    else{
+        for(int i=0; i<str.length()-1; i++){
+            if(str.charAt(i)=='x' && !firstX){
+                firstX = true;
+                if(str.charAt(i+1)=='x'){
+                    finalX = true;
+                }
+            }
+        }
+    }
+    return finalX;
 }

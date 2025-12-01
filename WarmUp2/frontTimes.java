@@ -1,8 +1,23 @@
-/**
- * Problem: frontTimes
- *
- * CodingBat Java Warmup-2 frontTimes\n * id/email\n * password\n * forgot password\n *  | \n * create account\n * about\n *  | \n * help\n *  | \n * code help+videos | \n * done\n *  | \n * prefs\n * CodingBat\n *  code practice\n * Java\n * Python\n * Warmup-2\n *  > \n * frontTimes\n * prev\n *   |  \n * next\n *   |  \n * chance\n * Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars, or whatever is there if the string is less than length 3. Return n copies of the front;\n * frontTimes("Chocolate", 2) → "ChoCho"\n * frontTimes("Chocolate", 3) → "ChoChoCho"\n * frontTimes("Abc", 3) → "AbcAbcAbc"\n * Go\n * ...Save, Compile, Run (ctrl-enter)\n * Show Solution\n * public String frontTimes(String str, int n) {\n * }\n * Go\n * Editor font size %:\n * 75\n * 100\n * 125\n * 150\n * Shorter output \n * Forget It!\n *  -- delete my code for this problem\n * Progress graphs: \n * Your progress graph\n *  for this problem\n * Random user progress graph\n *  for this problem \n * Random Epic Progress Graph\n * Java Help\n * Java Example Solution Code\n * Java String Introduction\n *  (video) \n * Java Substring v2\n *  (video)\n * Java String Equals and Loops\n * Java String indexOf and Parsing\n * Java If and Boolean Logic\n * If Boolean Logic Example Solution Code 1\n *  (video)\n * If Boolean Logic Example Solution Code 2\n *  (video)\n * Java For and While Loops\n * Java Arrays and Loops\n * Java Map Introduction\n * Java Map WordCount\n * Java Functional Mapping\n * Java Functional Filtering\n * Misc Code Practice\n * Code Badges\n * Introduction to Mod\n *  (video)\n * MakeBricks problem and solution\n *  (video x 2)\n * FizzBuzz the famous\n *  code interview question (video)\n * Difficulty: 206.0\n * Copyright \n * Nick Parlante\n *  2017 - \n * privacy
- */
-public class frontTimes {
-    // TODO: 實作此題
+// https://codingbat.com/prob/p101475
+
+// Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars, 
+// or whatever is there if the string is less than length 3. Return n copies of the front;
+
+// frontTimes("Chocolate", 2) → "ChoCho"
+// frontTimes("Chocolate", 3) → "ChoChoCho"
+// frontTimes("Abc", 3) → "AbcAbcAbc"
+
+public String frontTimes(String str, int n) {
+    String resultStr = "";
+    if(str.length()<3){
+        for(int i=0; i<n; i++){
+            resultStr += str;
+        }
+    }
+    else{
+        for(int i=0; i<n; i++){
+            resultStr += str.substring(0, 3);
+        }
+    }
+    return resultStr;
 }
