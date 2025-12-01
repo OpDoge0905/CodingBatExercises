@@ -1,8 +1,24 @@
-/**
- * Problem: stringMatch
- *
- * CodingBat Java Warmup-2 stringMatch\n * id/email\n * password\n * forgot password\n *  | \n * create account\n * about\n *  | \n * help\n *  | \n * code help+videos | \n * done\n *  | \n * prefs\n * CodingBat\n *  code practice\n * Java\n * Python\n * Warmup-2\n *  > \n * stringMatch\n * prev\n *   |  \n * next\n *   |  \n * chance\n * Given 2 strings, a and b, return the number of the positions where they contain the same length 2 substring. So "xxcaazz" and "xxbaaz" yields 3, since the "xx", "aa", and "az" substrings appear in the same place in both strings.\n * stringMatch("xxcaazz", "xxbaaz") → 3\n * stringMatch("abc", "abc") → 2\n * stringMatch("abc", "axc") → 0\n * Go\n * ...Save, Compile, Run (ctrl-enter)\n * Show Solution\n * public int stringMatch(String a, String b) {\n * }\n * Go\n * Editor font size %:\n * 75\n * 100\n * 125\n * 150\n * Shorter output \n * Forget It!\n *  -- delete my code for this problem\n * Progress graphs: \n * Your progress graph\n *  for this problem\n * Random user progress graph\n *  for this problem \n * Random Epic Progress Graph\n * Java Help\n * Java Example Solution Code\n * Java String Introduction\n *  (video) \n * Java Substring v2\n *  (video)\n * Java String Equals and Loops\n * Java String indexOf and Parsing\n * Java If and Boolean Logic\n * If Boolean Logic Example Solution Code 1\n *  (video)\n * If Boolean Logic Example Solution Code 2\n *  (video)\n * Java For and While Loops\n * Java Arrays and Loops\n * Java Map Introduction\n * Java Map WordCount\n * Java Functional Mapping\n * Java Functional Filtering\n * Misc Code Practice\n * Code Badges\n * Introduction to Mod\n *  (video)\n * MakeBricks problem and solution\n *  (video x 2)\n * FizzBuzz the famous\n *  code interview question (video)\n * Difficulty: 227.0\n * Copyright \n * Nick Parlante\n *  2017 - \n * privacy
- */
-public class stringMatch {
-    // TODO: 實作此題
+// https://codingbat.com/prob/p198640
+
+// Given 2 strings, a and b, return the number of the positions where they contain the same length 2 substring. 
+// So "xxcaazz" and "xxbaaz" yields 3, since the "xx", "aa", and "az" substrings appear in the same place in both strings.
+
+// stringMatch("xxcaazz", "xxbaaz") → 3
+// stringMatch("abc", "abc") → 2
+// stringMatch("abc", "axc") → 0
+
+public int stringMatch(String a, String b) {
+    int countSame = 0;
+    if(a.length() <2||b.length() <2){
+        countSame = 0;
+    }
+    else{
+        int strLength = a.length()<=b.length()? a.length(): b.length();
+        for(int i=0; i<strLength-1; i++){
+            if(a.substring(i, i+2).equals(b.substring(i, i+2))){
+                countSame++;
+            }
+        }
+    }
+    return countSame;
 }

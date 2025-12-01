@@ -8,5 +8,11 @@
 // array123([1, 1, 2, 1, 2, 3]) → true
 
 public boolean array123(int[] nums) {
-    
+    boolean finalCond = false;
+    for(int i=0; i<nums.length-2; i++){
+        if(nums[i]==1 && nums[i+1]==2 && nums[i+2]==3){
+            finalCond = true;
+        }
+    }
+    return finalCond;
 }

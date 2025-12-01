@@ -1,8 +1,20 @@
-/**
- * Problem: altPairs
- *
- * CodingBat Java Warmup-2 altPairs\n * id/email\n * password\n * forgot password\n *  | \n * create account\n * about\n *  | \n * help\n *  | \n * code help+videos | \n * done\n *  | \n * prefs\n * CodingBat\n *  code practice\n * Java\n * Python\n * Warmup-2\n *  > \n * altPairs\n * prev\n *   |  \n * next\n *   |  \n * chance\n * Given a string, return a string made of the chars at indexes 0,1, 4,5, 8,9 ... so "kittens" yields "kien".\n * altPairs("kitten") → "kien"\n * altPairs("Chocolate") → "Chole"\n * altPairs("CodingHorror") → "Congrr"\n * Go\n * ...Save, Compile, Run (ctrl-enter)\n * Show Solution\n * public String altPairs(String str) {\n * }\n * Go\n * Editor font size %:\n * 75\n * 100\n * 125\n * 150\n * Shorter output \n * Forget It!\n *  -- delete my code for this problem\n * Progress graphs: \n * Your progress graph\n *  for this problem\n * Random user progress graph\n *  for this problem \n * Random Epic Progress Graph\n * Java Help\n * Java Example Solution Code\n * Java String Introduction\n *  (video) \n * Java Substring v2\n *  (video)\n * Java String Equals and Loops\n * Java String indexOf and Parsing\n * Java If and Boolean Logic\n * If Boolean Logic Example Solution Code 1\n *  (video)\n * If Boolean Logic Example Solution Code 2\n *  (video)\n * Java For and While Loops\n * Java Arrays and Loops\n * Java Map Introduction\n * Java Map WordCount\n * Java Functional Mapping\n * Java Functional Filtering\n * Misc Code Practice\n * Code Badges\n * Introduction to Mod\n *  (video)\n * MakeBricks problem and solution\n *  (video x 2)\n * FizzBuzz the famous\n *  code interview question (video)\n * Difficulty: 233.0\n * Copyright \n * Nick Parlante\n *  2017 - \n * privacy
- */
-public class altPairs {
-    // TODO: 實作此題
+// https://codingbat.com/prob/p121596
+
+// Given a string, return a string made of the chars at indexes 0,1, 4,5, 8,9 ... so "kittens" yields "kien".
+
+// altPairs("kitten") → "kien"
+// altPairs("Chocolate") → "Chole"
+// altPairs("CodingHorror") → "Congrr"
+
+public String altPairs(String str) {
+    String resultStr = "";
+    int plusInd = 1;
+    for(int i=0; i<str.length() && str.substring(i, i+1)!=""; i++){
+        resultStr += str.substring(i, i+1);
+        if(plusInd%2 == 0){
+            i += 2;
+        }
+        plusInd++;
+    }
+    return resultStr;
 }
