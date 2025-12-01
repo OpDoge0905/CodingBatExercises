@@ -1,8 +1,27 @@
-/**
- * Problem: arrayFront9
- *
- * CodingBat Java Warmup-2 arrayFront9\n * id/email\n * password\n * forgot password\n *  | \n * create account\n * about\n *  | \n * help\n *  | \n * code help+videos | \n * done\n *  | \n * prefs\n * CodingBat\n *  code practice\n * Java\n * Python\n * Warmup-2\n *  > \n * arrayFront9\n * prev\n *   |  \n * next\n *   |  \n * chance\n * Given an array of ints, return true if one of the first 4 elements in the array is a 9. The array length may be less than 4.\n * arrayFront9([1, 2, 9, 3, 4]) → true\n * arrayFront9([1, 2, 3, 4, 9]) → false\n * arrayFront9([1, 2, 3, 4, 5]) → false\n * Go\n * ...Save, Compile, Run (ctrl-enter)\n * Show Solution\n * public boolean arrayFront9(int[] nums) {\n * }\n * Go\n * Editor font size %:\n * 75\n * 100\n * 125\n * 150\n * Shorter output \n * Forget It!\n *  -- delete my code for this problem\n * Progress graphs: \n * Your progress graph\n *  for this problem\n * Random user progress graph\n *  for this problem \n * Random Epic Progress Graph\n * Java Help\n * Java Example Solution Code\n * Java String Introduction\n *  (video) \n * Java Substring v2\n *  (video)\n * Java String Equals and Loops\n * Java String indexOf and Parsing\n * Java If and Boolean Logic\n * If Boolean Logic Example Solution Code 1\n *  (video)\n * If Boolean Logic Example Solution Code 2\n *  (video)\n * Java For and While Loops\n * Java Arrays and Loops\n * Java Map Introduction\n * Java Map WordCount\n * Java Functional Mapping\n * Java Functional Filtering\n * Misc Code Practice\n * Code Badges\n * Introduction to Mod\n *  (video)\n * MakeBricks problem and solution\n *  (video x 2)\n * FizzBuzz the famous\n *  code interview question (video)\n * Difficulty: 221.0\n * Copyright \n * Nick Parlante\n *  2017 - \n * privacy
- */
-public class arrayFront9 {
-    // TODO: 實作此題
+// https://codingbat.com/prob/p186031
+
+
+// Given an array of ints, return true if one of the first 4 elements in the array is a 9. The array length may be less than 4.
+
+// arrayFront9([1, 2, 9, 3, 4]) → true
+// arrayFront9([1, 2, 3, 4, 9]) → false
+// arrayFront9([1, 2, 3, 4, 5]) → false
+
+public boolean arrayFront9(int[] nums) {
+    boolean finalCond = false;  
+    if(nums.length<4){
+        for(int i=0; i<nums.length; i++){
+            if(nums[i] == 9){
+                finalCond = true;
+            }
+        }
+    }
+    else{
+        for(int i=0; i<4; i++){
+            if(nums[i] == 9){
+                finalCond = true;
+            }
+        }
+    }
+    return finalCond;
 }
