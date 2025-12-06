@@ -3,12 +3,15 @@
 
 ---
 
-![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
-![CodingBat](https://img.shields.io/badge/CodingBat-Practice-blue?style=for-the-badge)
-![Progress](https://img.shields.io/badge/Progress-Learning-orange?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
-![Last Commit](https://img.shields.io/github/last-commit/OpDoge0905/CodingBatExercises?style=for-the-badge)
-![Repo Size](https://img.shields.io/github/repo-size/OpDoge0905/CodingBatExercises?style=for-the-badge)
+<p align="center">
+  <a href="https://github.com/OpDoge0905/CodingBatExercises">
+    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/OpDoge0905/CodingBatExercises?style=for-the-badge" />
+  </a>
+  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/OpDoge0905/CodingBatExercises?style=for-the-badge" />
+  <img alt="Language" src="https://img.shields.io/github/languages/top/OpDoge0905/CodingBatExercises?style=for-the-badge" />
+  <img alt="Stars" src="https://img.shields.io/github/stars/OpDoge0905/CodingBatExercises?style=for-the-badge" />
+  <img alt="License" src="https://img.shields.io/github/license/OpDoge0905/CodingBatExercises?style=for-the-badge" />
+</p>
 
 ---
 
