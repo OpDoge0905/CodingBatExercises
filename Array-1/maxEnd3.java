@@ -9,5 +9,13 @@
 // maxEnd3([2, 11, 3]) → [3, 3, 3]
 
 public int[] maxEnd3(int[] nums) {
+    int maxVal = nums[0];
+    if(nums[nums.length-1] > maxVal){
+        maxVal = nums[nums.length-1];
+    }
     
+    for(int i=0; i<nums.length; i++){
+        nums[i] = maxVal;
+    }
+    return nums;
 }
