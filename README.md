@@ -59,10 +59,11 @@ src/
 ├── Array/          # 陣列操作 (Array manipulation)
 ├── Logic/          # 邏輯判斷 (Boolean Logic)
 └── Recursion/      # 遞迴練習 (Recursive problems)
+```
 
 ---
 
-### 📬 聯絡我 (Contact)
+## 📬 聯絡我 (Contact)
 
 如果您對我的程式碼有任何建議，或希望進一步交流，歡迎隨時聯繫。
 Feel free to open an issue or contact me via the channels below.
